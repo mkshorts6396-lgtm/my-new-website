@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="index.css">
+<title>Services - NEXUS</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#0f172a,#111827,#312e81);
+    color:white;
+    overflow-x:hidden;
+}
+
+header{
+    padding:25px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:700;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#8b5cf6;
+}
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:65px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    color:#cbd5e1;
+    font-size:18px;
+}
+
+.services{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:35px;
+    padding-bottom:80px;
+}
+
+.card{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:25px;
+    padding:35px;
+    text-align:center;
+    transition:.5s;
+    transform-style:preserve-3d;
+}
+
+.card:hover{
+    transform:perspective(1000px)
+    rotateY(10deg)
+    rotateX(8deg)
+    translateY(-10px);
+}
+
+.icon{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.card h2{
+    margin-bottom:15px;
+    font-size:28px;
+}
+
+.card p{
+    color:#d1d5db;
+    line-height:1.7;
+    margin-bottom:20px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    border-radius:30px;
+    text-decoration:none;
+    color:white;
+    background:linear-gradient(45deg,#8b5cf6,#06b6d4);
+    transition:.4s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+.stats{
+    width:90%;
+    max-width:1200px;
+    margin:60px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.stat-box{
+    text-align:center;
+    padding:30px;
+    background:rgba(255,255,255,.08);
+    border-radius:20px;
+    backdrop-filter:blur(15px);
+}
+
+.stat-box h3{
+    font-size:42px;
+    color:#8b5cf6;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#94a3b8;
+}
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    background:rgba(0,0,0,0.2);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+}
+
+body{
+    padding-top:90px; 
+}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">NEXUS</div>
+    <div class="menu-btn" id="menuBtn">
+        ☰
+    </div>
+
+    <div class="nav-links">
+        <a href="myweb.html">Home</a>
+        <a href="service.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+<section class="hero">
+    <h1>Our Services</h1>
+    <p>Innovative solutions designed for the future.</p>
+</section>
+
+<section class="services">
+
+    <div class="card">
+        <div class="icon">🌐</div>
+        <h2>Web Development</h2>
+        <p>
+            Modern, fast and responsive websites built using the latest technologies.
+        </p>
+        <a href="#" class="btn">Explore</a>
+    </div>
+
+    <div class="card">
+        <div class="icon">🎨</div>
+        <h2>UI/UX Design</h2>
+        <p>
+            Beautiful interfaces focused on user experience and engagement.
+        </p>
+        <a href="#" class="btn">Explore</a>
+    </div>
+
+    <div class="card">
+        <div class="icon">📱</div>
+        <h2>Mobile Apps</h2>
+        <p>
+            Android and iOS applications with smooth performance and modern design.
+        </p>
+        <a href="#" class="btn">Explore</a>
+    </div>
+
+    <div class="card">
+        <div class="icon">☁️</div>
+        <h2>Cloud Solutions</h2>
+        <p>
+            Secure and scalable cloud infrastructure for businesses.
+        </p>
+        <a href="#" class="btn">Explore</a>
+    </div>
+
+    <div class="card">
+        <div class="icon">🤖</div>
+        <h2>AI Solutions</h2>
+        <p>
+            AI-powered tools, automation systems and intelligent applications.
+        </p>
+        <a href="#" class="btn">Explore</a>
+    </div>
+
+    <div class="card">
+        <div class="icon">🚀</div>
+        <h2>Digital Marketing</h2>
+        <p>
+            SEO, branding and growth strategies to boost your online presence.
+        </p>
+        <a href="#" class="btn">Explore</a>
+    </div>
+
+</section>
+
+<section class="stats">
+
+    <div class="stat-box">
+        <h3>150+</h3>
+        <p>Projects Completed</p>
+    </div>
+
+    <div class="stat-box">
+        <h3>98%</h3>
+        <p>Client Satisfaction</p>
+    </div>
+
+    <div class="stat-box">
+        <h3>50+</h3>
+        <p>Team Members</p>
+    </div>
+
+    <div class="stat-box">
+        <h3>10+</h3>
+        <p>Years Experience</p>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 NEXUS. All Rights Reserved.
+</footer>
+<script src="index.js"></script>
+</body>
+</html>

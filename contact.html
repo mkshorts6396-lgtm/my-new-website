@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <link rel="stylesheet" href="index.css">
+<title>Contact Us</title>
+
+<style>
+body{
+margin:0;
+font-family:Segoe UI;
+background:linear-gradient(135deg,#0f172a,#312e81);
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.form{
+width:450px;
+padding:40px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(15px);
+border-radius:25px;
+}
+
+h1{
+color:white;
+text-align:center;
+margin-bottom:25px;
+}
+
+input,textarea{
+width:100%;
+padding:15px;
+margin:10px 0;
+border:none;
+border-radius:10px;
+outline:none;
+}
+
+button{
+width:100%;
+padding:15px;
+border:none;
+border-radius:10px;
+background:linear-gradient(45deg,#8b5cf6,#06b6d4);
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    background:rgba(0,0,0,0.2);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+}
+
+body{
+    padding-top:90px;
+}
+</style>
+
+</head>
+<body>
+    <nav class="navbar">
+         <div class="logo">NEXUS</div>
+
+    <div class="nav-links">
+        <a href="myweb.html">Home</a>
+        <a href="service.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+         <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+       
+        
+    </div>
+    </nav>
+
+<div class="form">
+
+<h1>Contact Us</h1>
+
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Email">
+<textarea rows="5" placeholder="Message"></textarea>
+
+<button>Send Message</button>
+
+</div>
+<form onsubmit="return validateForm()">
+    <input type="text" id="name">
+    <button type="submit">Send</button>
+</form>
+<script>
+function validateForm(){
+
+    let name = document.getElementById("name").value;
+
+    if(name === ""){
+        alert("Please enter your name");
+        return false;
+    }
+
+    return true;
+}
+</script>
+<script src="index.js"></script>
+
+</body>
+</html>
